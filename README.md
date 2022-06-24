@@ -70,5 +70,7 @@ For i = rowStart To rowEnd
 #### Execution times: Original Code vs. Refactored Code
 In both analysis of All Stocks a timer was used to see how long it took each script to run.  The original script had times of .2578125 seconds to run the 2017 script and .265625 seconds to run the 2018 script.  The refactored code took much less time for both years. I did notice that in order to get the shorter run time I had to run the code from VBA.  When the analysis are run from the button on the worksheet the times are similar to the original scripts.  
 
-       
+![VBA_Challenge_2017](https://user-images.githubusercontent.com/106348899/175437784-fd5580ec-8ff8-4875-a20d-299ffb29e6f0.png)
+![VBA_Challenge_2018](https://user-images.githubusercontent.com/106348899/175437800-41f5bdbe-452b-491c-a891-3a6d85dd20cb.png)
+      
  
