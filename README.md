@@ -32,10 +32,13 @@ The DAQO analysis was pretty straightforward only analyzing 1 stock but when it 
            If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
                endingPrice = Cells(j, 6).Value
            End If 
-       Next j ```
-
-
+       Next j 
+```
 #### Refactored Code
+For the refactored code I used 1 For loop to initialize the ticker Volume and then used another For loop with If/Then statements to begin looping over all the data rows, increase the ticker volume per ticker, find the starting and ending prices as well as increase the ticker index. 
+
+
+
 
        
  
