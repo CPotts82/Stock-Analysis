@@ -77,4 +77,4 @@ In both analysis of All Stocks a timer was used to see how long it took each scr
  ### Advantages and Disadvantages of Refactoring Code
  I believe that refactoring code can be very advantageous as you are cleaning up, simplifying and improving upon code that has already been written.  Writing code is like writing a paper, there are multiple drafts before you get your final copy.  Code can always be improved upon. The disadvantage to refactoring code is, especially if it is someone else's code, trying to figure out anything that is not clear.  Trying to debug where you do not have background knowledge.  It can be challenging but overall I believe it has the potential to be mostly advantageous. 
 ### Pros/Cons
-
+While it was very advantageous to use code that was already written it was quite challenging for someone who is not well educated in coding to simplify and improve upon code. This was very challenging to me, the code writer, but I think with more practice this will be a marketable and very neccessary skill.
