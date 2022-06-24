@@ -21,24 +21,16 @@ The DAQO analysis was pretty straightforward only analyzing 1 stock but when it 
        For j = 2 To RowCount
            '5a) Get total volume for current ticker
            If Cells(j, 1).Value = ticker Then
-
                totalVolume = totalVolume + Cells(j, 8).Value
-
            End If
            '5b) get starting price for current ticker
            If Cells(j - 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
-
                startingPrice = Cells(j, 6).Value
-
            End If
-
            '5c) get ending price for current ticker
            If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
-
                endingPrice = Cells(j, 6).Value
-
-           End If
-           
+           End If 
        Next j '''
        
  
