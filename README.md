@@ -7,4 +7,4 @@
  ## Results of Analysis
  ### Stock Analysis - DAQO and All Stocks
  2017 was a fairly good year for the renewable energy stocks researched.  There was a lot of trade activity with a range starting at 35,796,200 going all the way up to 782,187,000 trades for the year.  The yearly returns were pretty impressive with only 1 of the stocks having a negative return at -7.2%.  The other 11 stocks were all in the positives ranging from 5.5% to 199.4% return.  DAQO had the lowest amount of trade activity but the highest yearly return for the year at 199.4%.
- 
+ ![2017](https://user-images.githubusercontent.com/106348899/175434518-72af9cbd-6010-4294-a9a9-9b12f0a2311b.png)
