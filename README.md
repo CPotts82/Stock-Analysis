@@ -13,4 +13,32 @@
 ### Analysis Procedure/Code
 The DAQO analysis was pretty straightforward only analyzing 1 stock but when it came to researching all 12 stocks the coding became a bit more complex.  In order for our code to loop through and pull the Total Volume and Returns per year we had to set up an array with all the tickers for the computer to loop through to pull and compile our data. In the original All Stocks code I ended up using a nested for loop to initialize the ticker, increase volume per ticker and get the starting and ending prices for the return.  
 
-'''
+'''For i = 0 To 11
+    ticker = tickers(i)
+    totalVolume = 0
+    '5) loop through rows in the data
+       Sheets(yearValue).Activate
+       For j = 2 To RowCount
+           '5a) Get total volume for current ticker
+           If Cells(j, 1).Value = ticker Then
+
+               totalVolume = totalVolume + Cells(j, 8).Value
+
+           End If
+           '5b) get starting price for current ticker
+           If Cells(j - 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
+
+               startingPrice = Cells(j, 6).Value
+
+           End If
+
+           '5c) get ending price for current ticker
+           If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
+
+               endingPrice = Cells(j, 6).Value
+
+           End If
+           
+       Next j '''
+       
+ 
