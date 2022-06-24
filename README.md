@@ -40,46 +40,31 @@ For the refactored code I used 1 For loop to initialize the ticker Volume and th
 
 ```tickerIndex = i
 For i = 0 To 11
-    tickerVolume(i) = 0
-    
-Next i
-    
+    tickerVolume(i) = 0   
+Next i   
     ''2b) Loop over all the rows in the spreadsheet.
         rowStart = 2
-        rowEnd = Cells(Rows.Count, "A").End(xlUp).Row
-    
+        rowEnd = Cells(Rows.Count, "A").End(xlUp).Row   
 For i = rowStart To rowEnd
-    
-        '3a) Increase volume for current ticker
-        
+
+        '3a) Increase volume for current ticker       
         If Cells(i, 8).Value = tickerVolume(tickerIndex) Then
-               tickerVolume(tickerIndex) = tickerVolume(tickerIndex) + Cells(j, 8).Value
-               
+               tickerVolume(tickerIndex) = tickerVolume(tickerIndex) + Cells(j, 8).Value       
         End If
-
-
-        '3b) Check if the current row is the first row with the selected tickerIndex.
         
+        '3b) Check if the current row is the first row with the selected tickerIndex 
         If Cells(i, 1).Value = tickerIndex And Cells(i - 1, 1) <> tickerIndex Then
-               tickerStartingPrice(12) = Cells(i, 6).Value
-     
+               tickerStartingPrice(12) = Cells(i, 6).Value     
         End If
-        
-        
-        '3c) check if the current row is the last row with the selected ticker
-         'If the next row‚Äôs ticker doesn‚Äôt match, increase the tickerIndex.
-        'If  Then
-        
+                
+        '3c) check if the current row is the last row with the selected ticker        
         If Cells(i, 1).Value = tickerIndex And Cells(i + 1, 1) <> tickerIndex Then
                tickerEndingPrice(12) = Cells(j, 6).Value
-
         End If
     
         '3d Increase the tickerIndex.
-            
-        If Cells(i, 1).Value = tickerIndex And Cells(i + 1, 1).Value <> Cells(i - 1, 1).Value Then
-            tickerIndex = tickerIndex + 1
-            
+         If Cells(i, 1).Value = tickerIndex And Cells(i + 1, 1).Value <> Cells(i - 1, 1).Value Then
+            tickerIndex = tickerIndex + 1           
         End If
 ```
 
