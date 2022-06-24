@@ -12,3 +12,5 @@
 ![2018](https://user-images.githubusercontent.com/106348899/175435050-9ad1ff01-341d-487b-9743-0b5c85abd6b3.png)
 ### Analysis Procedure/Code
 The DAQO analysis was pretty straightforward only analyzing 1 stock but when it came to researching all 12 stocks the coding became a bit more complex.  In order for our code to loop through and pull the Total Volume and Returns per year we had to set up an array with all the tickers for the computer to loop through to pull and compile our data. In the original All Stocks code I ended up using a nested for loop to initialize the ticker, increase volume per ticker and get the starting and ending prices for the return.  
+
+'''
